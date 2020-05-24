@@ -1,0 +1,113 @@
+body {
+  font-family: font-stack(body), sans-serif;
+  color: color(text-primary);
+}
+
+a {
+  text-decoration: none;
+}
+
+.heading {
+  font-family: font-stack(heading), sans-serif;
+  font-weight: font-weight(medium);
+  color: color(text-primary);
+}
+
+.h1 {
+  @extend .heading;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  letter-spacing: -.24px;
+}
+
+.h2 {
+  @extend .heading;
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  letter-spacing: -.24px;
+}
+
+.h3 {
+  @extend .heading;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  letter-spacing: -.06px;
+}
+
+.h4 {
+  @extend .heading;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: -.06px;
+}
+
+.h5 {
+  @extend .heading;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: -.05px;
+}
+
+.h6 {
+  @extend .heading;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  letter-spacing: -.05px;
+}
+
+.subtitle1 {
+  font-family: font-stack(subtitle), sans-serif;
+  font-weight: font-weight(regular);
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: -.05px;
+}
+
+.subtitle2 {
+  font-family: font-stack(subtitle), sans-serif;
+  font-weight: font-weight(regular);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: -.05px;
+}
+
+.body1 {
+  font-family: font-stack(body), sans-serif;
+  font-weight: font-weight(regular);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: -.05px;
+}
+
+.body2 {
+  font-family: font-stack(body), sans-serif;
+  font-weight: font-weight(regular);
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  letter-spacing: -.04px;
+}
+
+.button {
+  font-family: font-stack(button), sans-serif;
+  font-weight: font-weight(medium);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: -.05px;
+  text-transform: uppercase;
+}
+
+.caption {
+  font-family: font-stack(caption), sans-serif;
+  font-weight: font-weight(regular);
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  letter-spacing: 0.33px;
+}
+
+.overline {
+  font-family: font-stack(caption), sans-serif;
+  font-weight: font-weight(medium);
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  letter-spacing: 0.33px;
+}

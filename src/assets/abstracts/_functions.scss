@@ -1,0 +1,42 @@
+// Safe load method return value from map
+@function safe-load-unquote($map, $key) {
+  @if map-has_key($map, $key) {
+    @return #{unquote(map_get($map, $key))};
+  } @else {
+    @warn 'KEY NOT FOUND: #{$key} in #{$map}';
+    @return false;
+  }
+}
+
+@function safe-load($map, $key) {
+  @if map-has_key($map, $key) {
+    @return map_get($map, $key);
+  } @else {
+    @warn 'KEY NOT FOUND: #{$key} in #{$map}';
+    @return false;
+  }
+}
+
+@function color ($key) {
+  @return safe-load($colors, $key);
+}
+
+@function grey ($key) {
+  @return safe-load($grey, $key);
+}
+
+@function font-weight ($key) {
+  @return safe-load($font-weights, $key);
+}
+
+@function font-stack($key) {
+  @return safe-load-unquote($font-stacks, $key);
+}
+
+@function shadow ($key) {
+  @return safe-load-unquote($shadows, $key);
+}
+
+@function zIndex ($key) {
+  @return safe-load($zIndex, $key);
+}
